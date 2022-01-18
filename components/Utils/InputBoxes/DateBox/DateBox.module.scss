@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/montserrat/Montserrat-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Droid Serif";
+    src: url("/fonts/droidserif/DroidSerif.ttf.ttf");
+  }
+
+.date-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+    .label{
+        padding: 5px 0px;
+        font-family: "Droid Serif",sans-serif;
+    }
+
+    .date-input{
+        width: 100%;
+        padding: 8px;
+        font-family: "DroidSerif",sans-serif;
+    }
+}

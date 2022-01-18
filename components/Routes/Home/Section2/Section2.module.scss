@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("/fonts/droidserif/DroidSerif.ttf.ttf");
+}
+
+.section2 {
+  width: 100%;
+  min-height: 50vh;
+  margin: 100px auto;
+
+  .container {
+    width: 75%;
+    margin: auto;
+
+    .header {
+      padding: 50px 0px;
+      .header-title {
+        display: block;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        font-family: "Montserrat",serif;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 80px;
+      letter-spacing: 0.0825em;
+      line-height: 1.2sem;
+      text-align: justify;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section2 {
+    .container {
+      width: 90%;
+
+      .header {
+        margin: 50px;
+
+        .header-title{
+          text-align: unset;
+        }
+      }
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+        justify-content: center;
+      }
+    }
+  }
+}

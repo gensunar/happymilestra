@@ -1,0 +1,38 @@
+.layout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+    }
+
+    .main{
+        width: 100%;
+        min-height: 95vh;
+        padding-top: 70px;
+        background-color: #fff0f0;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .layout{
+        .header{
+        }
+    
+        .main{
+            padding-top: 70px;
+        }
+    
+        .footer{
+        }
+    }   
+}

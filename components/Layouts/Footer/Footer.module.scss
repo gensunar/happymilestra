@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("/fonts/droidserif/DroidSerif.ttf.ttf");
+}
+
+.footer {
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: black;
+  color: white;
+  position: relative;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+
+    .office {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+
+      .header-title {
+        font-size: 1.1rem;
+        padding: 10px 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Montserrat",serif;
+      }
+
+      .office-address__line {
+        padding: 5px 0px;
+        font-family: "DroidSerif",sans-serif;
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+
+      .header-title {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0px;
+        font-family: "Montserrat",serif;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        padding: 5px 0px;
+
+        .contact-item__value {
+          margin-left: 10px;
+          font-family: "DroidSerif",sans-serif;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0px;
+
+      .header-title {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0px;
+        font-family: "Montserrat",serif;
+      }
+
+      .social-icons {
+        display: flex;
+      }
+
+      .facebook {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 10px;
+        background-image: url("/images/facebook.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .facebook:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 1px rgb(73, 28, 235);
+        border-radius: 50%;
+      }
+      .instagram {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        background-image: url("/images/instagram.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .instagram:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 1px rgb(236, 158, 86);
+        border-radius: 50%;
+      }
+      .twitter {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        background-image: url("/images/twitter.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .twitter:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 1px rgb(10, 187, 211);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+
+    .divider {
+      width: 100%;
+      padding: 0px 40px;
+
+      .hr {
+        color: #333;
+        background-color: #333;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .info {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 100px;
+
+      .office {
+        display: flex;
+        flex-direction: column;
+
+        .header-title {
+        }
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+
+        .header-title {
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 10px 0px;
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+
+        .header-title {
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 10px 0px;
+        }
+      }
+    }
+
+    .bottom {
+      padding: 10px;
+      .divider {
+        padding: 0px 90px;
+
+        .hr {
+          color: #333;
+          background-color: #333;
+        }
+      }
+    }
+  }
+}

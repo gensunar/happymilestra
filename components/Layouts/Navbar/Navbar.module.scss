@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .brand {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+    .menu-icon {
+      width: 32px;
+      height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .menu-icon__line {
+        border: 1px solid #76776a;
+      }
+    }
+
+    .brand-logo {
+      width: 200px;
+      height: 50px;
+      background-image: url("/images/logo.png");
+      background-size: contain;
+      margin-left: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .brand-logo:hover{
+        cursor: pointer;
+    }
+  }
+
+  .menu {
+    padding-right: 10px;
+
+    .menu-items {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-family: "Montserrat",serif;
+
+      .menu-item {
+        padding: 8px 20px;
+        font-weight: bold;
+        display: none;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .menu-item:hover {
+        cursor: pointer;
+        color: #c22245;
+      }
+
+      .order-btn {
+        background-color: #d6294e;
+        color: white;
+        padding: 8px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+
+      .order-btn:hover {
+        cursor: pointer;
+        background-color: #c22245;
+      }
+    }
+  }
+
+  .drawer {
+    width: 70%;
+    height: 100vh;
+    margin-top: 70px;
+    position: fixed;
+    background-color: white;
+    animation: sidenavAnimation 1s;
+  }
+}
+
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes sidenavAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    .brand {
+      padding-left: 30px;
+      .menu-icon {
+        display: none;
+      }
+
+      .brand-logo{
+        margin-left: 60px;
+      }
+    }
+
+    .menu {
+      padding-right: 30px;
+      .menu-items {
+        .menu-item {
+          display: block;
+        }
+      }
+    }
+  }
+}

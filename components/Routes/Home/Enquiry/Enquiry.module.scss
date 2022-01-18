@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  src: url("/fonts/droidserif/DroidSerif.ttf.ttf");
+}
+
+.enquiry {
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 40px;
+  background-color: rgb(209, 236, 253);
+  padding: 30px 0px;
+
+  .container {
+    .header {
+      padding: 0px 10px;
+      .header-title {
+        display: block;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        font-family: "Montserrat",serif;
+      }
+    }
+
+    .card {
+      width: 90%;
+      margin: 50px auto;
+      box-shadow: 2px 2px 2px 2px #333;
+      background-color: white;
+      border-radius: 10px;
+
+      .card-header {
+          padding: 20px;
+        .card-header-title {
+          display: block;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          color: #E8505B;
+          font-family: "Montserrat",serif;
+        }
+      }
+
+      .radio-group {
+        display: flex;
+        padding: 0px 30px;
+        margin-top: 30px;
+        align-items: center;
+
+        .radio-btn {
+          padding: 10px;
+
+          .radio-label {
+            font-size: 1.1rem;
+            padding-left: 10px;
+            font-weight: 700;
+            font-family: "DroidSerif",sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .enquiry {
+    .container {
+      .header {
+        margin-left: 100px;
+        .header-title {
+          padding: 10px;
+          text-align: unset;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card {
+        width: 50%;
+        margin: 50px auto;
+
+        .card-header {
+          width: 100%;
+          .card-header-title{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
